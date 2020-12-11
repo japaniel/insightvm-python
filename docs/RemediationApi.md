@@ -20,9 +20,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.RemediationApi()
+api_instance = swagger_client.RemediationApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the asset.
 vulnerability_id = 'vulnerability_id_example' # str | The identifier of the vulnerability.
 
@@ -47,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 

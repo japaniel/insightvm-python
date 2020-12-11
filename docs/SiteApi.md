@@ -99,9 +99,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 tag_id = 56 # int | The identifier of the tag.
 
@@ -126,7 +130,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -149,9 +153,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = 56 # int | The identifier of the user. (optional)
 
@@ -176,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -199,9 +207,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 body = swagger_client.SiteCreateResource() # SiteCreateResource | Resource for creating a site configuration. (optional)
 
 try:
@@ -224,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -247,9 +259,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.SiteCredential() # SiteCredential | The specification of a site credential. (optional)
 
@@ -274,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -297,9 +313,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.ScanSchedule() # ScanSchedule | Resource for a scan schedule. (optional)
 
@@ -324,7 +344,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -347,9 +367,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.SmtpAlert() # SmtpAlert | Resource for creating a new SMTP alert. (optional)
 
@@ -374,7 +398,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -397,9 +421,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.SnmpAlert() # SnmpAlert | Resource for creating a new SNMP alert. (optional)
 
@@ -424,7 +452,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -447,9 +475,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.SyslogAlert() # SyslogAlert | Resource for creating a new Syslog alert. (optional)
 
@@ -474,7 +506,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -497,9 +529,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -522,7 +558,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -545,9 +581,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -570,7 +610,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -593,9 +633,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -618,7 +662,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -641,9 +685,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -666,7 +714,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -689,9 +737,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -714,7 +766,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -737,9 +789,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -762,7 +818,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -785,9 +841,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -810,7 +870,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -833,9 +893,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 credential_id = 56 # int | The identifier of the site credential.
 
@@ -860,7 +924,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -883,9 +947,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 schedule_id = 56 # int | The identifier of the scan schedule.
 
@@ -910,7 +978,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -933,9 +1001,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 
@@ -960,7 +1032,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -983,9 +1055,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 
@@ -1010,7 +1086,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1033,9 +1109,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 
@@ -1060,7 +1140,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1083,9 +1163,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 credential_id = 56 # int | The identifier of the shared credential.
 body = True # bool | Flag indicating whether the shared credential is enabled for the site's scans. (optional)
@@ -1112,7 +1196,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1135,9 +1219,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 credential_id = 56 # int | The identifier of the site credential.
 body = True # bool | Flag indicating whether the credential is enabled for use during the scan. (optional)
@@ -1164,7 +1252,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1187,9 +1275,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1212,7 +1304,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1235,9 +1327,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1260,7 +1356,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1283,9 +1379,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1308,7 +1408,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1331,9 +1431,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1356,7 +1460,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1379,9 +1483,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1404,7 +1512,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1427,9 +1535,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1452,7 +1564,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1475,9 +1587,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
 size = 10 # int | The number of records per page to retrieve. (optional) (default to 10)
@@ -1506,7 +1622,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1529,9 +1645,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 credential_id = 56 # int | The identifier of the site credential.
 
@@ -1556,7 +1676,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1579,9 +1699,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1604,7 +1728,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1627,9 +1751,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1652,7 +1780,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1675,9 +1803,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1700,7 +1832,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1723,9 +1855,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1748,7 +1884,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1771,9 +1907,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1796,7 +1936,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1819,9 +1959,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 schedule_id = 56 # int | The identifier of the scan schedule.
 
@@ -1846,7 +1990,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1869,9 +2013,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1894,7 +2042,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1917,9 +2065,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1942,7 +2094,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1965,9 +2117,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -1990,7 +2146,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2013,9 +2169,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 
@@ -2040,7 +2200,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2063,9 +2223,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2088,7 +2252,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2111,9 +2275,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 
@@ -2138,7 +2306,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2161,9 +2329,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2186,7 +2358,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2209,9 +2381,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 
@@ -2236,7 +2412,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2259,9 +2435,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2284,7 +2464,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2307,9 +2487,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2332,7 +2516,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2355,9 +2539,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2380,7 +2568,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2403,9 +2591,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
 size = 10 # int | The number of records per page to retrieve. (optional) (default to 10)
 sort = ['sort_example'] # list[str] | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters. (optional)
@@ -2432,7 +2624,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2455,9 +2647,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2480,7 +2676,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2503,9 +2699,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2528,7 +2728,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2551,9 +2751,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2576,7 +2780,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2599,9 +2803,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2624,7 +2832,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2647,9 +2855,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 asset_id = 789 # int | The identifier of the asset.
 
@@ -2674,7 +2886,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2697,9 +2909,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 asset_group_id = 56 # int | The identifier of the asset group.
 
@@ -2724,7 +2940,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2747,9 +2963,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 asset_group_id = 56 # int | The identifier of the asset group.
 
@@ -2774,7 +2994,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2797,9 +3017,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 
 try:
@@ -2822,7 +3046,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2845,9 +3069,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 tag_id = 56 # int | The identifier of the tag.
 
@@ -2872,7 +3100,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2895,9 +3123,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 user_id = 56 # int | The identifier of the user.
 
@@ -2922,7 +3154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2945,9 +3177,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [swagger_client.SiteCredential()] # list[SiteCredential] | A list of site credentials resources. (optional)
 
@@ -2972,7 +3208,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -2995,9 +3231,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = 56 # int | The identifier of the discovery connection. (optional)
 
@@ -3022,7 +3262,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3045,9 +3285,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 body = swagger_client.DiscoverySearchCriteria() # DiscoverySearchCriteria | param1
 id = 56 # int | The identifier of the site.
 
@@ -3072,7 +3316,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3095,9 +3339,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = 56 # int | The identifier of the scan engine. (optional)
 
@@ -3122,7 +3370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3145,9 +3393,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [swagger_client.ScanSchedule()] # list[ScanSchedule] | Array of resources for updating all scan schedules defined in the site. Scan schedules defined in the site that are omitted from this request will be deleted from the site. (optional)
 
@@ -3172,7 +3424,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3195,9 +3447,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = 'body_example' # str | The identifier of the scan template. (optional)
 
@@ -3222,7 +3478,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3245,9 +3501,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [swagger_client.SmtpAlert()] # list[SmtpAlert] | Array of resources for updating all SMTP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. (optional)
 
@@ -3272,7 +3532,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3295,9 +3555,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [swagger_client.SnmpAlert()] # list[SnmpAlert] | Array of resources for updating all SNMP alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. (optional)
 
@@ -3322,7 +3586,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3345,9 +3609,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [swagger_client.SyslogAlert()] # list[SyslogAlert] | Array of resources for updating all Syslog alerts defined in the site. Alerts defined in the site that are omitted from this request will be deleted from the site. (optional)
 
@@ -3372,7 +3640,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3395,9 +3663,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [56] # list[int] | A list of tag identifiers to replace the site's tags. (optional)
 
@@ -3422,7 +3694,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3445,9 +3717,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [56] # list[int] | A list of user identifiers to replace the site's access list. (optional)
 
@@ -3472,7 +3748,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3495,9 +3771,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [56] # list[int] | Array of asset group identifiers. (optional)
 
@@ -3522,7 +3802,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3545,9 +3825,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = ['body_example'] # list[str] | List of addresses to be the site's new excluded scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation. (optional)
 
@@ -3572,7 +3856,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3595,9 +3879,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = [56] # list[int] | Array of asset group identifiers. (optional)
 
@@ -3622,7 +3910,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3645,9 +3933,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = ['body_example'] # list[str] | List of addresses to be the site's new included scan targets. Each address is a string that can represent either a hostname, ipv4 address, ipv4 address range, ipv6 address, or CIDR notation. (optional)
 
@@ -3672,7 +3964,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3695,9 +3987,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.SiteUpdateResource() # SiteUpdateResource | Resource for updating a site configuration. (optional)
 
@@ -3722,7 +4018,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3745,9 +4041,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 credential_id = 56 # int | The identifier of the site credential.
 body = swagger_client.SiteCredential() # SiteCredential | The specification of the site credential to update. (optional)
@@ -3774,7 +4074,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3797,9 +4097,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 body = swagger_client.SiteOrganization() # SiteOrganization | Resource for updating the specified site's organization information. (optional)
 
@@ -3824,7 +4128,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3847,9 +4151,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 schedule_id = 56 # int | The identifier of the scan schedule.
 body = swagger_client.ScanSchedule() # ScanSchedule | Resource for updating the specified scan schedule. (optional)
@@ -3876,7 +4184,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3899,9 +4207,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 body = swagger_client.SmtpAlert() # SmtpAlert | Resource for updating the specified SMTP alert. (optional)
@@ -3928,7 +4240,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -3951,9 +4263,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 body = swagger_client.SnmpAlert() # SnmpAlert | Resource for updating the specified SNMP alert. (optional)
@@ -3980,7 +4296,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -4003,9 +4319,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.SiteApi()
+api_instance = swagger_client.SiteApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the site.
 alert_id = 56 # int | The identifier of the alert.
 body = swagger_client.SyslogAlert() # SyslogAlert | Resource for updating the specified Syslog alert. (optional)
@@ -4032,7 +4352,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 

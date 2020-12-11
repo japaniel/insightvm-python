@@ -29,9 +29,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 body = swagger_client.SonarQuery() # SonarQuery | param0
 
 try:
@@ -54,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -77,9 +81,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the Sonar query.
 
 try:
@@ -102,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -125,9 +133,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the discovery connection.
 
 try:
@@ -150,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -173,9 +185,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
 size = 10 # int | The number of records per page to retrieve. (optional) (default to 10)
 sort = ['sort_example'] # list[str] | The criteria to sort the records by, in the format: `property[,ASC|DESC]`. The default sort order is ascending. Multiple sort criteria can be specified using multiple sort query parameters. (optional)
@@ -202,7 +218,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -225,9 +241,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 
 try:
     # Sonar Queries
@@ -246,7 +266,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -269,9 +289,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the Sonar query.
 
 try:
@@ -294,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -317,9 +341,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the Sonar query.
 
 try:
@@ -342,7 +370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -365,9 +393,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the discovery connection.
 
 try:
@@ -389,7 +421,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -412,9 +444,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 body = swagger_client.SonarCriteria() # SonarCriteria | param0
 
 try:
@@ -437,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -460,9 +496,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetDiscoveryApi()
+api_instance = swagger_client.AssetDiscoveryApi(swagger_client.ApiClient(configuration))
 body = swagger_client.SonarQuery() # SonarQuery | param1
 id = 789 # int | The identifier of the Sonar query.
 
@@ -487,7 +527,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 

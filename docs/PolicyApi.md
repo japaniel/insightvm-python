@@ -45,9 +45,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 asset_id = 789 # int | The identifier of the asset.
 policy_id = 789 # int | The identifier of the policy
 
@@ -72,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -95,9 +99,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 asset_id = 789 # int | The identifier of the asset.
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
@@ -124,7 +132,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -147,9 +155,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 asset_id = 789 # int | The identifier of the asset.
 policy_id = 789 # int | The identifier of the policy
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -180,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -203,9 +215,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -236,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -259,9 +275,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
 size = 10 # int | The number of records per page to retrieve. (optional) (default to 10)
@@ -290,7 +310,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -313,9 +333,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 filter = 'filter_example' # str | Filters the retrieved policies with those whose titles that match the parameter. (optional)
 scanned_only = true # bool | Flag indicating the policies retrieved should only include those with Pass or Fail compliance results. The list of scanned policies is based on the user's list of accessible assets. (optional)
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -346,7 +370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -369,9 +393,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 asset_id = 789 # int | The identifier of the asset.
 applicable_only = true # bool | An optional boolean parameter indicating the policies retrieved should only include those with a policy compliance status of either a PASS of FAIL result. Default value is `false`, which will also include policies with a compliance status of NOT_APPLICABLE. (optional)
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -402,7 +430,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -425,9 +453,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 
 try:
@@ -450,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -473,9 +505,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 asset_id = 789 # int | The identifier of the asset.
 
@@ -500,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -523,9 +559,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 applicable_only = true # bool | An optional boolean parameter indicating the assets retrieved should only include those with rule results of either PASS or FAIL. Default value is `false`, which will also include assets with a compliance status of NOT_APPLICABLE. (optional)
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -556,7 +596,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -579,9 +619,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 id = 789 # int | The identifier of the policy
 
 try:
@@ -604,7 +648,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -627,9 +671,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
 
@@ -654,7 +702,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -677,9 +725,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
 asset_id = 789 # int | The identifier of the asset.
@@ -706,7 +758,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -729,9 +781,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
 applicable_only = true # bool | An optional boolean parameter indicating the assets retrieved should only include those with rule results of either PASS or FAIL. Default value is `false`, which will also include assets with a compliance status of NOT_APPLICABLE. (optional)
@@ -764,7 +820,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -787,9 +843,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
 
@@ -814,7 +874,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -837,9 +897,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 asset_id = 789 # int | The identifier of the asset.
 policy_id = 789 # int | The identifier of the policy
 group_id = 789 # int | The identifier of the policy group.
@@ -872,7 +936,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -895,9 +959,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
 size = 10 # int | The number of records per page to retrieve. (optional) (default to 10)
@@ -926,7 +994,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -949,9 +1017,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 
@@ -976,7 +1048,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -999,9 +1071,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 asset_id = 789 # int | The identifier of the asset.
@@ -1028,7 +1104,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1051,9 +1127,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 asset_id = 789 # int | The identifier of the asset.
@@ -1080,7 +1160,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1103,9 +1183,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 applicable_only = true # bool | An optional boolean parameter indicating the assets retrieved should only include those with rule results of either PASS or FAIL. Default value is `false`, which will also include assets with a compliance status of NOT_APPLICABLE. (optional)
@@ -1138,7 +1222,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1161,9 +1245,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -1194,7 +1282,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1217,9 +1305,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 
@@ -1244,7 +1336,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1267,9 +1359,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 rule_id = 789 # int | The identifier of the policy rule.
 
@@ -1294,7 +1390,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1317,9 +1413,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 policy_id = 789 # int | The identifier of the policy
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
 size = 10 # int | The number of records per page to retrieve. (optional) (default to 10)
@@ -1348,7 +1448,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1371,9 +1471,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.PolicyApi()
+api_instance = swagger_client.PolicyApi(swagger_client.ApiClient(configuration))
 
 try:
     # Policy Compliance Summaries
@@ -1392,7 +1496,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 

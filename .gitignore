@@ -63,5 +63,5 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-#Editor
+# Editor files
 .env

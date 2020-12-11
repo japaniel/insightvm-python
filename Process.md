@@ -1,36 +1,52 @@
 process
 =======
 
-- install swagger
+- install swagger (mac)
 
-    brew install swagger
+      brew install swagger
 
-```
-For the system Java wrappers to find this JDK, symlink it with
-  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+- set environment variables according to your environment:
 
-openjdk is keg-only, which means it was not symlinked into /usr/local,
-because it shadows the macOS `java` wrapper.
+      ```
+      For the system Java wrappers to find this JDK, symlink it with
+        sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-If you need to have openjdk first in your PATH run:
-  echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+      openjdk is keg-only, which means it was not symlinked into /usr/local,
+      because it shadows the macOS `java` wrapper.
 
-For compilers to find openjdk you may need to set:
-  export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-```
+      If you need to have openjdk first in your PATH run:
+        echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+
+      For compilers to find openjdk you may need to set:
+        export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+      ```
+
+- grab swagger definition
+
+      curl https://help.rapid7.com/insightvm/en-us/api/api.json -o swagger.json
+
+- add basic auth to all security: []
+
+  use your editor to find 
+  
+      "security": [] 
+  
+  and change it to:
+
+      "security": [
+          {
+              "Basic": []
+          }
+      ]
 
 - generate code 
 
-  swagger-codegen -i [/path/to/swagger](https://help.rapid7.com/insightvm/en-us/api/api.json) -l python
+      swagger-codegen generate -i /path/to/swagger.json -l python
 
 - install said package 
 
-    pip install -e .
+      pip install -e .
 
-- learn [swagger](https://mjstealey.github.io/swagger-demo/pythonclient/) and python
+- [create](https://insight.rapid7.com/platform#/apiKeyManagement/user) user that has access to all the sites needed
 
-    /me goes to the internet
-
-- create user with api auth key
-
-    https://insight.rapid7.com/platform#/apiKeyManagement/user
+    

@@ -25,9 +25,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AdministrationApi()
+api_instance = swagger_client.AdministrationApi(swagger_client.ApiClient(configuration))
 license = 'license_example' # str |  (optional)
 key = 'key_example' # str | A license activation key. (optional)
 
@@ -52,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -75,9 +79,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AdministrationApi()
+api_instance = swagger_client.AdministrationApi(swagger_client.ApiClient(configuration))
 body = 'body_example' # str | The console command to execute. (optional)
 
 try:
@@ -100,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -123,9 +131,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AdministrationApi()
+api_instance = swagger_client.AdministrationApi(swagger_client.ApiClient(configuration))
 
 try:
     # Information
@@ -144,7 +156,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -167,9 +179,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AdministrationApi()
+api_instance = swagger_client.AdministrationApi(swagger_client.ApiClient(configuration))
 
 try:
     # License
@@ -188,7 +204,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -211,9 +227,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AdministrationApi()
+api_instance = swagger_client.AdministrationApi(swagger_client.ApiClient(configuration))
 
 try:
     # Properties
@@ -232,7 +252,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -255,9 +275,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AdministrationApi()
+api_instance = swagger_client.AdministrationApi(swagger_client.ApiClient(configuration))
 
 try:
     # Settings
@@ -276,7 +300,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 

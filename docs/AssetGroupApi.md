@@ -40,9 +40,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 tag_id = 56 # int | The identifier of the tag.
 
@@ -67,7 +71,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -90,9 +94,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 user_id = 56 # int | The identifier of the user.
 
@@ -117,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -140,9 +148,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 asset_id = 789 # int | The identifier of the asset.
 
@@ -167,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -190,9 +202,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 body = swagger_client.AssetGroup() # AssetGroup | The details of the asset group. (optional)
 
 try:
@@ -215,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -238,9 +254,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -263,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -286,9 +306,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -311,7 +335,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -334,9 +358,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -359,7 +387,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -382,9 +410,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -407,7 +439,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -430,9 +462,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -455,7 +491,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -478,9 +514,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -503,7 +543,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -526,9 +566,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 type = 'type_example' # str | The type of asset group. (optional)
 name = 'name_example' # str | A search pattern for the name of the asset group. Searches are case-insensitive contains. (optional)
 page = 0 # int | The index of the page (zero-based) to retrieve. (optional) (default to 0)
@@ -559,7 +603,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -582,9 +626,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -607,7 +655,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -630,9 +678,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 
 try:
@@ -655,7 +707,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -678,9 +730,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 asset_id = 789 # int | The identifier of the asset.
 
@@ -705,7 +761,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -728,9 +784,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 tag_id = 56 # int | The identifier of the tag.
 
@@ -755,7 +815,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -778,9 +838,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 user_id = 56 # int | The identifier of the user.
 
@@ -805,7 +869,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -828,9 +892,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 body = swagger_client.SearchCriteria() # SearchCriteria | The search criteria specification. (optional)
 
@@ -855,7 +923,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -878,9 +946,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 body = [56] # list[int] | The tags to associate to the asset group. (optional)
 
@@ -905,7 +977,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -928,9 +1000,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 body = [56] # list[int] | The users to grant access to the asset group. (optional)
 
@@ -955,7 +1031,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -978,9 +1054,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 body = swagger_client.AssetGroup() # AssetGroup | The details of the asset group. (optional)
 
@@ -1005,7 +1085,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -1028,9 +1108,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.AssetGroupApi()
+api_instance = swagger_client.AssetGroupApi(swagger_client.ApiClient(configuration))
 id = 56 # int | The identifier of the asset group.
 body = [56] # list[int] | The assets to place in the asset group.  (optional)
 
@@ -1055,7 +1139,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 

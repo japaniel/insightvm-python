@@ -24,9 +24,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.ScanTemplateApi()
+api_instance = swagger_client.ScanTemplateApi(swagger_client.ApiClient(configuration))
 body = swagger_client.ScanTemplate() # ScanTemplate | The details of the scan template. (optional)
 
 try:
@@ -49,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -72,9 +76,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.ScanTemplateApi()
+api_instance = swagger_client.ScanTemplateApi(swagger_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the scan template
 
 try:
@@ -97,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -120,9 +128,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.ScanTemplateApi()
+api_instance = swagger_client.ScanTemplateApi(swagger_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the scan template
 
 try:
@@ -145,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -168,9 +180,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.ScanTemplateApi()
+api_instance = swagger_client.ScanTemplateApi(swagger_client.ApiClient(configuration))
 
 try:
     # Scan Templates
@@ -189,7 +205,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
@@ -212,9 +228,13 @@ import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+# Configure HTTP basic authorization: Basic
+configuration = swagger_client.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.ScanTemplateApi()
+api_instance = swagger_client.ScanTemplateApi(swagger_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the scan template
 body = swagger_client.ScanTemplate() # ScanTemplate | The details of the scan template. (optional)
 
@@ -239,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[Basic](../README.md#Basic)
 
 ### HTTP request headers
 
