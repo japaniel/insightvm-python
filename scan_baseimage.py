@@ -83,7 +83,7 @@ def get_asset(api_client, asset_id):
     except ApiException as e:
         print("Exception when calling AssetApi->get_asset: %s\n" % e)
     
-    return api_response.vulnerabilities
+    return api_response
 
 def update_asset(api_client, asset_id, ip):
     """
