@@ -23,7 +23,8 @@ process
 
 - grab swagger definition
 
-      curl https://help.rapid7.com/insightvm/en-us/api/api.json -o swagger.json
+      mkdir api_client
+      curl https://help.rapid7.com/insightvm/en-us/api/api.json -o api_client/api.json
 
 - add basic auth to all security: []
 
@@ -39,8 +40,9 @@ process
           }
       ]
 
-- generate code 
+- generate code
 
+      cd api_client
       swagger-codegen generate -i /path/to/swagger.json -l python
 
 - install said package 
