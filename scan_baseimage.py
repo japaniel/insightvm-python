@@ -12,6 +12,8 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 
 def build_config():
+    # TODO - Cleanup: add params to this call and pass in env_vars
+
     """ Build Config object from environment variables """
     config = configuration.Configuration()
     config.password = os.getenv('PASSWORD')
@@ -22,32 +24,38 @@ def build_config():
 
     return config
 
-def lookup_host(api_client, host =''):
+def find_asset(api_client, identifier ={}):
     """ 
     Look up if the host is in InsightVM
-    Returns ... something
 
-    :param api_client: Instance of swagger_client.ApiClient
+    Returns resources found in InsightVM
 
-    :param host: Shortname, or subset of shortname, for the host that is being searched
+    :param obj api_client: Instance of swagger_client.ApiClient
+    :param dict identifier: dict of filter field and value values
+    :return
+    :rtype list[resources]
     """
     api_instance = swagger_client.AssetApi(api_client)
 
+    filters = []
     if os.getenv('FILTERS'):
         # TODO - Make this work if we ever want to validate more than the hostname
         # which we do already because we want to know if the IP is the same as what
         # is in InsightVM as the base image will go up and down
         for f in os.environ['FILTERS']:
             pprint(f)
-    
-    else:
-        filters = {
-            'field': 'host-name',
-            'operator': 'is-like',
-            'value': host,
-        }
 
-    body = swagger_client.SearchCriteria(match='all',filters=[filters])
+    else:
+        for key in identifier:
+            filters.append(
+                {
+                    'field': key,
+                    'operator': 'is-like',
+                    'value': identifier[key],
+                }
+            )
+
+    body = swagger_client.SearchCriteria(match='all', filters=filters)
 
     try:
         api_response = api_instance.find_assets(body, page=os.environ['PAGE'], size=os.environ['SIZE'])
@@ -57,35 +65,65 @@ def lookup_host(api_client, host =''):
 
     return api_response.resources
 
-def add_host(api_client, host):
+def get_asset(api_client, asset_id):
     """
-    Add host to InsightVM
+    Proxy for AssetAPI.get_asset()
 
-    Return when complete
+    Returns asset with id provided
+
+    :params obj api_client: Instance of swagger_client.ApiClient
+    :params int asset_id: ID of asset looking for
     """
-    pass
+    
+    api_instance = swagger_client.AssetApi(api_client)
 
-def scan_host(api_client, host =""):
+    try:
+        # Asset
+        api_response = api_instance.get_asset(asset_id)
+    except ApiException as e:
+        print("Exception when calling AssetApi->get_asset: %s\n" % e)
+    
+    return api_response.vulnerabilities
+
+def update_asset(api_client, asset_id, ip):
+    """
+    Update resource with current asset ip
+
+    :param api_client: A valid InsightVM client
+    :param asset_id: the asset desired to update
+    :param ip: the current IP of the asset
+    """
+
+    api_client = api_client
+    asset_id = ""
+    ip = os.environ['IP']
+
+def scan_host(api_client, site_id, asset):
     """
     Run security scan on the host
 
+    :param obj api_client: The api_client object as returned by InstightVM
+    :param int site_id: the InsightVM site_id where the asset to be scan presides
+    :param dict asset: Single asset to scan as returned by InsightVM
+    
     Returns scan results
     """
+
     # TODO - check for a running scan
+    # but maybe we don't need this as we checked to see if recently_scanned()
     api_instance = swagger_client.ScanApi(api_client)
-    id = 9 # TODO - Get rid of this magic number, which might be needed for testing...
     body = swagger_client.AdhocScan() # AdhocScan | The details for the scan. (optional)
 
     try:
-        api_response = api_instance.start_scan(id, body=body)
+        api_response = api_instance.start_scan(site_id, body=body)
         logging.debug('Response: {}'.format(api_response))
     except ApiException as e:
         logging.error("Exception when calling ScanApi->start_scan: %s\n" % e)
 
     scan_id = api_response.id
-    stuff = poll_scan(api_client, scan_id)
-    
-    return stuff
+    poll_scan(api_client, scan_id)
+
+    return api_response
 
 def poll_scan(api_client, id =""):
     """
@@ -95,10 +133,9 @@ def poll_scan(api_client, id =""):
     """
     status = ""
 
-    logging.info('Checking status of scan {}'.format(id))
+    logging.debug('Checking status of scan {}'.format(id))
     while status != 'finished':
         api_instance = swagger_client.ScanApi(api_client)
-        id = id
 
         try:
             api_response = api_instance.get_scan(id)
@@ -110,88 +147,108 @@ def poll_scan(api_client, id =""):
 
     return api_response
 
-def validate_host(resources, search_term):
+def validate_hostname(asset, search_term):
     """
-    Validate the resource returned is in fact the host we are looking for
+    Validate the hostname matches what is on the asset
 
-    :param resource: list returned by the SearchAPI call
-
-    :param search_term: string of host to search for
-
-    Returns single resource
+    :param dict asset: The assest as returned by InsightVM
+    :param str hostname: The hostname you are looking to match
     """
-    rs = []
-    for r in resources:
-        if search_term and not re.search(search_term, r.host_name):
-            logging.info('The host {} is not in ')
-            continue
+    matching_assets = []
 
-        # TODO - This thing right here
-        for event in r.history:
-            # sort by date
-            # Python lists are ordered and in our case by _date so unless we sort otherwise we are :thumbsup:
-            # limit to last 2h
-            event_time = pandas.Timestamp(event._date)
-            current_time = pandas.Timestamp.now('UTC')
-            print(current_time, event_time)
+    for hostname in asset.host_names:
+        if re.search(search_term, hostname.name):
+            logging.info('Found {} in list of hostnames'.format(hostname))
+            matching_assets.append(asset)
 
-            test = current_time - event_time
-            print(test.total_seconds())
+    return matching_assets
 
-            df = pandas.DataFrame(columns=['event', 'now'])
-            df.event = [event_time]
-            df.now = [current_time]
-            diff = (df.now-df.event).astype('timedelta64[h]')
-            #pprint(diff)
+# TODO - Cleanup: Change default period to 7200 or 2 hours in seconds
+def recently_scanned(asset, period =30):
+    """
+    Validate if asset has been scanned within a period
+    
+    :param dict asset: An asset as returned by InsightVM
+    :param int period: The period in seconds which scan is to be considered recent default 2 hours
 
-            # check if any are type='SCAN'
-            
-       
-            # logging.info('Asset {} was scanned within the last 2h; passing'.format(asset))
-            # exit
+    retuns true only if finds scan within period
+    """
+    for event in asset.history:
+        event_time = pandas.Timestamp(event._date)
+        current_time = pandas.Timestamp.now('UTC')
+        delta = current_time - event_time
 
-        rs.append(r)
+        # TODO - Cleanup: check if we need an additional conditional on the if statement
+        # event.status != 'finished'
+        # This might indicate there is a scan currently running
+        if int(delta.total_seconds()) < period and event.type != 'SCAN':
+            return True
 
-    if len(rs) > 1:
-        logging.debug('Multiple resources were found; be more specific in your search/n{}'.format(resources))
-        exit()
+    return False
 
-    resource = rs[0]
-    return resource
+def validate_asset(assets, search_term, ip_to_scan):
+    """
+    Validate the asset returned is in fact the host we are looking for
+    :param list asset: assets returned by the SearchAPI call
+    :param str search_term: name of host used to search with
+    :param str ip_to_scan: ip address of the host desiring to scan
+    Returns single asset
+    """
+    valid_assets = []
+    for asset in assets:
+        # Asset hostname correct?
+        if search_term and not validate_hostname(asset, search_term):
+            logging.error("There are not assets that match {}".format(search_term))
+
+        # IP matches vm to test?
+        if ip_to_scan and not asset.ip == ip_to_scan:
+            logging.info('The address in InsightVM ({}) and the address needing scanned ({}) are not the same'.format(asset.ip, ip_to_scan))
+            # TODO - Feature: add_or_update_host if IP doesn't match
+            # update_asset(api_client, asset.id, ip)
+
+        valid_assets.append(asset)
+
+    if len(valid_assets) > 1:
+        logging.debug('Multiple assets were found and duped our validation.\nBe more specific in your search/n{}'.format(assets))
+        exit
+
+    asset = valid_assets[0]
+    return asset
 
 def main():
+    # TODO - Feature: accept IP address as argument
     ENV_FILE = dotenv.find_dotenv()
     if ENV_FILE:
         dotenv.load_dotenv(ENV_FILE, override=True)
 
+    # TODO - Cleanup: move to const.py file
     host = os.getenv('HOST')
+    SITE_ID = os.environ['SITE_ID']
     config = build_config()
 
     api_client = swagger_client.ApiClient(config)
+ 
+    assets = find_asset(api_client, {'host-name': host})
 
-    resources = lookup_host(api_client, host)
-
-    if len(resources) < 1:
-        logging.warning("{} was not found".format(host))
+    if not assets:
+        logging.error("{} was not found".format(host))
         logging.info("Adding {} to InsigthVM".format(host))
-        add_host(api_client, host)
+        exit
+        # TODO - Feature: add host if it doesn't exist
+        # add_host(api_client, host)
 
-    if len(resources) >= 1:
-        resource = validate_host(resources, host)
+    if assets:
+        validated_asset = validate_asset(assets, host, os.getenv('IP'))
 
-    logging.info('Found the host: {}'.format(host))
-    # TODO - Swap True to False as the desired normal state
-    if resource.assessed_for_vulnerabilities == True:
-        scan_host(api_client, host)
+    if validated_asset and not recently_scanned(validated_asset):
+        api_response = scan_host(api_client, SITE_ID, validated_asset.id)
+        scan_results = get_asset(api_client, validated_asset.id)
 
-    if resource.vulnerabilities.total > 0:
-        logging.error('Total risk score is too high: {}'.format(resource.vulnerabilities.total))
-        exit()
+    if scan_results and scan_results.vulnerabilities.total > 0:
+        logging.error('Scan id:{} came back with vulnerabilities: {}'.format(scan_results.id, api_response))
 
+    # TODO - Cleanup: exit gracefully
     print("We Passed!")
-
-    # for property, value in vars(api_instance).items():
-    #     print(property, ":", value)
 
 if __name__ == '__main__':
     main()
